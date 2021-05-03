@@ -1,76 +1,80 @@
 // Options the user could type in
 const prompts = [
   ["hola", "holii", "holi", "buenos dias", "buenas noches"],
-  ["que tal estas", "how is life", "how are things"],
-  ["what are you doing", "what is going on", "what is up"],
-  ["how old are you"],
-  ["who are you", "are you human", "are you bot", "are you human or bot"],
-  ["who created you", "who made you"],
+  ["quien es pgscom"],
+  ["pgscom tiene discord"],
+  ["que tal estas", "que tal"],
+  ["que estas haciendo"],
+  ["cuantos años tienes"],
+  ["quien eres", "eres humano", "eres un robot", "eres humano o eres un bot"],
+  ["quien te ha creado"],
   [
-    "your name please",
-    "your name",
-    "may i know your name",
-    "what is your name",
-    "what call yourself"
+    "tu nombre porfavor",
+    "tu nombre",
+    "puedo saber tu nombre",
+    "cual es tu nombre",
+    "como te puedo llamar"
   ],
-  ["i love you"],
-  ["happy", "good", "fun", "wonderful", "fantastic", "cool"],
-  ["bad", "bored", "tired"],
-  ["help me", "tell me story", "tell me joke"],
-  ["ah", "yes", "ok", "okay", "nice"],
-  ["bye", "good bye", "goodbye", "see you later"],
-  ["what should i eat today"],
+  ["te quiero"],
+  ["feliz", "bien", "fantastico", "guay"],
+  ["mal", "aburrido", "cansado"],
+  ["ayudame", "cuentame una historia", "cuentame un chiste"],
+  ["ah", "si", "ok", "okay", "guay"],
+  ["chao", "adios", "hasta luego"],
+  ["que debo comer hoy"],
   ["bro"],
-  ["what", "why", "how", "where", "when"],
-  ["no","not sure","maybe","no thanks"],
+  ["que", "porque", "como", "donde", "cuando"],
+  ["no","no","puede","no gracias"],
   [""],
-  ["haha","ha","lol","hehe","funny","joke"]
+  ["jaja","ja","lol","jeje","gracioso","broma"]
 ]
 
 // Possible responses, in corresponding order
 
 const replies = [
-  ["Hello!", "Hi!", "Hey!", "Hi there!","Howdy"],
+  ["Hola!", "Hola!", "Hey!", "Hola!","Hola"],
+  ["PGSCOM es un programador, creador de contenido, desarrollador de videojuegos, un editor... Un poco de todo"],
+  ["Si, tiene discord. Entra al server con este link https://pgscom.gihub.io/discord"],
   [
-    "Fine... how are you?",
-    "Pretty well, how are you?",
-    "Fantastic, how are you?"
+    "Bien, y tu que tal estas?",
+    "Muy bien, y tu que tal estas?",
+    "Perfecto, y tu que tal estas?"
   ],
   [
-    "Nothing much",
-    "About to go to sleep",
-    "Can you guess?",
-    "I don't know actually"
+    "Poco",
+    "A punto de irme a dormir",
+    "Puedes adivinar?",
+    "Ahora mismo no lo se"
   ],
-  ["I am infinite"],
-  ["I am just a bot", "I am a bot. What are you?"],
-  ["The one true God, JavaScript"],
-  ["I am nameless", "I don't have a name"],
-  ["I love you too", "Me too"],
-  ["Have you ever felt bad?", "Glad to hear it"],
-  ["Why?", "Why? You shouldn't!", "Try watching TV"],
-  ["What about?", "Once upon a time..."],
-  ["Tell me a story", "Tell me a joke", "Tell me about yourself"],
-  ["Bye", "Goodbye", "See you later"],
+  ["Soy infinito"],
+  ["Solo soy el bot de PGSCOM", "Yo soy el bot de PGSCOM. Que eres tu?"],
+  ["Me ha creado PGSCOM"],
+  ["No tengo nombre, solo soy el bot de PGSCOM", "No tengo nombre, solo soy el bot de PGSCOM"],
+  ["Te quiero yo tambien", "Te quiero yo tambien"],
+  ["Alguna vez te has sentido mal?", "Encantado de escucharlo"],
+  ["Porque?", "Porque? No deberías!", "Porque? No deberías!"],
+  ["Que pasa?", "Érase una vez..."],
+  ["Cuentame una historia", "Cuentame un chiste", "Cuentame algo sobre ti"],
+  ["Chao", "Adios", "Te veo luego"],
   ["Sushi", "Pizza"],
   ["Bro!"],
-  ["Great question"],
-  ["That's ok","I understand","What do you want to talk about?"],
-  ["Please say something :("],
-  ["Haha!","Good one!"]
+  ["Buena pregunta"],
+  ["Es ok","Lo entiendo","De que quieres hablar"],
+  ["Porfa di algo :("],
+  ["Jaja!","Muy buena!"]
 ]
 
 // Random for any other user input
 
 const alternative = [
-  "Same",
-  "Go on...",
-  "Bro...",
-  "Try again",
-  "I'm listening...",
-  "I don't understand :/"
+  "No lo he entendido :/",
+  "No lo he entendido :/",
+  "No lo he entendido :/",
+  "No lo he entendido :/",
+  "No lo he entendido :/",
+  "No lo he entendido :/"
 ]
 
 // Whatever else you want :)
 
-const coronavirus = ["Please stay home", "Wear a mask", "Fortunately, I don't have COVID", "These are uncertain times"]
+const coronavirus = ["Ponte la mascarilla", "Ponte la mascarilla", "No tengas covid", "Son tiempos dificiles"]

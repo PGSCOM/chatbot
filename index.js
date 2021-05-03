@@ -29,8 +29,8 @@ function output(input) {
   if (compare(prompts, replies, text)) { 
     // Search for exact match in `prompts`
     product = compare(prompts, replies, text);
-  } else if (text.match(/thank/gi)) {
-    product = "You're welcome!"
+  } else if (text.match(/gracias/gi)) {
+    product = "De nada!"
   } else if (text.match(/(corona|covid|virus)/gi)) {
     // If no match, check if message contains `coronavirus`
     product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
