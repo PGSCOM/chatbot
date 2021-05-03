@@ -1,7 +1,7 @@
 // Options the user could type in
 const prompts = [
-  ["hi", "hey", "hello", "good morning", "good afternoon"],
-  ["how are you", "how is life", "how are things"],
+  ["hola", "holii", "holi", "buenos dias", "buenas noches"],
+  ["que tal estas", "how is life", "how are things"],
   ["what are you doing", "what is going on", "what is up"],
   ["how old are you"],
   ["who are you", "are you human", "are you bot", "are you human or bot"],
