@@ -1,8 +1,15 @@
-// Options the user could type in
+const time = new Date();
+const hora = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
+
+
 const prompts = [
   ["hola", "holii", "holi", "buenos dias", "buenas noches"],
   ["quien es pgscom"],
   ["pgscom tiene discord"],
+  ["que hora es"],
+  ["como te han creado", "como te han hecho"],
+  ["vendes mis datos a google", "vendes mis datos a facebook", "vendes mis datos a alguien", "vendes mis datos"],
+  ["que haces"],
   ["que tal estas", "que tal"],
   ["que estas haciendo"],
   ["cuantos años tienes"],
@@ -26,7 +33,7 @@ const prompts = [
   ["que", "porque", "como", "donde", "cuando"],
   ["no","no","puede","no gracias"],
   [""],
-  ["jaja","ja","lol","jeje","gracioso","broma"]
+  ["jaja","ja","lol","jeje","gracioso","broma","jaj"]
 ]
 
 // Possible responses, in corresponding order
@@ -35,6 +42,10 @@ const replies = [
   ["Hola!", "Hola!", "Hey!", "Hola!","Hola"],
   ["PGSCOM es un programador, creador de contenido, desarrollador de videojuegos, un editor... Un poco de todo"],
   ["Si, tiene discord. Entra al server con este link https://pgscom.gihub.io/discord"],
+  ["Son las " + hora + "... espera... Anitiquiti? Algunos entenderan eso..."],
+  ["Me han creado con java y html."],
+  ["No, no vendo tus datos a ninguna empresa. Estas hablando con un programa y esta conversacion no la puede ver nadie, solo tu. Cuando reinicies la pagina, toda la conversacion se borrara."],
+  ["Hablar contigo :)"],
   [
     "Bien, y tu que tal estas?",
     "Muy bien, y tu que tal estas?",
@@ -48,7 +59,7 @@ const replies = [
   ],
   ["Soy infinito"],
   ["Solo soy el bot de PGSCOM", "Yo soy el bot de PGSCOM. Que eres tu?"],
-  ["Me ha creado PGSCOM"],
+  ["Me ha creado PGSCOM, con todo su esfuerzo y dedicacion. (Rima y todo)"],
   ["No tengo nombre, solo soy el bot de PGSCOM", "No tengo nombre, solo soy el bot de PGSCOM"],
   ["Te quiero yo tambien", "Te quiero yo tambien"],
   ["Alguna vez te has sentido mal?", "Encantado de escucharlo"],
