@@ -33,7 +33,7 @@ const prompts = [
   ["que", "porque", "como", "donde", "cuando"],
   ["no","no","puede","no gracias"],
   [""],
-  ["jaja","ja","lol","jeje","gracioso","broma","jaj"]
+  ["jaja","ja","lol","jeje","gracioso","broma","jaj", "jajaja", "jajaj", "jajajaj","xd"]
 ]
 
 // Possible responses, in corresponding order
