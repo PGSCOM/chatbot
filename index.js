@@ -24,7 +24,10 @@ function output(input) {
     .replace(/whats/g, "what is")
     .replace(/please /g, "")
     .replace(/ please/g, "")
-    .replace(/r u/g, "are you");
+    .replace(/r u/g, "are you")
+    .replace(/q/g, "que")
+    .replace(/qn/g, "quien")
+    .replace(/qun/g, "quien");
 
   if (compare(prompts, replies, text)) { 
     // Search for exact match in `prompts`
@@ -80,7 +83,7 @@ function addChat(input, product) {
   botImg.src = "bot-mini.png";
   botImg.className = "avatar";
   botDiv.className = "bot response";
-  botText.innerText = "Typing...";
+  botText.innerText = "Escribiendo...";
   botDiv.appendChild(botText);
   botDiv.appendChild(botImg);
   messagesContainer.appendChild(botDiv);

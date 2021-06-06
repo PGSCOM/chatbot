@@ -3,7 +3,7 @@ const hora = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds()
 
 
 const prompts = [
-  ["hola", "holii", "holi", "buenos dias", "buenas noches"],
+  ["hola", "holii", "holi", "buenos dias", "buenas noches", "holiwi", "holiwis"],
   ["quien es pgscom"],
   ["pgscom tiene discord"],
   ["que hora es"],
@@ -60,8 +60,8 @@ const replies = [
   ["Soy infinito"],
   ["Solo soy el bot de PGSCOM", "Yo soy el bot de PGSCOM. Que eres tu?"],
   ["Me ha creado PGSCOM, con todo su esfuerzo y dedicacion. (Rima y todo)"],
-  ["No tengo nombre, solo soy el bot de PGSCOM", "No tengo nombre, solo soy el bot de PGSCOM"],
-  ["Te quiero yo tambien", "Te quiero yo tambien"],
+  ["No tengo nombre, solo soy el bot de PGSCOM"],
+  ["Te quiero yo tambien"],
   ["Alguna vez te has sentido mal?", "Encantado de escucharlo"],
   ["Porque?", "Porque? No deberías!", "Porque? No deberías!"],
   ["Que pasa?", "Érase una vez..."],
@@ -88,4 +88,4 @@ const alternative = [
 
 // Whatever else you want :)
 
-const coronavirus = ["Ponte la mascarilla", "Ponte la mascarilla", "No tengas covid", "Son tiempos dificiles"]
+const coronavirus = ["Ponte la mascarilla", "1,5 metros entre persona y persona", "Ten cuidado", "Son tiempos dificiles"]
