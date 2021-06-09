@@ -42,6 +42,8 @@ function output(input) {
     product = compare(prompts, replies, text);
   } else if (text.match(/gracias/gi)) {
     product = "De nada!"
+  } else if (text.match(/soy|me llamo|yo me llamo/gi)) {
+    product = "Encantado de conocerte!"
   } else if (text.match(/(corona|covid|virus)/gi)) {
     // If no match, check if message contains `coronavirus`
     product = coronavirus[Math.floor(Math.random() * coronavirus.length)];

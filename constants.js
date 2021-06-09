@@ -4,6 +4,11 @@ const hora = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds()
 
 const prompts = [
   ["hola", "holii", "holi", "buenos dias", "buenas noches", "holiwi", "holiwis"],
+  ["adios", "chao", "chao bacalao", "bye"],
+  ["como estas", "que tal"],
+  ["hola siri", "hey siri"],
+  ["hola alexa"],
+  ["hola google", "hey google"],
   ["quien es pgscom"],
   ["pgscom tiene discord"],
   ["que hora es"],
@@ -40,6 +45,11 @@ const prompts = [
 
 const replies = [
   ["Hola!", "Hola!", "Hey!", "Hola!","Hola"],
+  ["adios", "chao", "chao bacalao", "bye"],
+  ["Bien", "Mal", "Regular", "Ni idea, soy un robot"],
+  ["YO NO SOY SIRI, SOY EL BOT DE PGSCOM"],
+  ["YO NO SOY ALEXA, SOY EL BOT DE PGSCOM"],
+  ["YO NO SOY EL ASISTENTE DE GOOGLE, SOY EL BOT DE PGSCOM"],
   ["PGSCOM es un programador, creador de contenido, desarrollador de videojuegos, un editor... Un poco de todo"],
   ["Si, tiene discord. Entra al server con este link https://pgscom.gihub.io/discord"],
   ["Son las " + hora + "... espera... Anitiquiti? Algunos entenderan eso..."],
