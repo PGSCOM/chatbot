@@ -5,6 +5,8 @@ const hora = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds()
 const prompts = [
   ["hola", "holii", "holi", "buenos dias", "buenas noches", "holiwi", "holiwis"],
   ["adios", "chao", "chao bacalao", "bye"],
+  ["a"],
+  ["donde vives", "donde estas"],
   ["como estas", "que tal"],
   ["hola siri", "hey siri"],
   ["hola alexa"],
@@ -46,6 +48,8 @@ const prompts = [
 const replies = [
   ["Hola!", "Hola!", "Hey!", "Hola!","Hola"],
   ["adios", "chao", "chao bacalao", "bye"],
+  ["a"],
+  ["En un servidor. Concretamente en github.com."],
   ["Bien", "Mal", "Regular", "Ni idea, soy un robot"],
   ["YO NO SOY SIRI, SOY EL BOT DE PGSCOM"],
   ["YO NO SOY ALEXA, SOY EL BOT DE PGSCOM"],
@@ -89,7 +93,7 @@ const replies = [
 
 const alternative = [
   "No lo he entendido :/",
-  "No lo he entendido :/",
+  "No tengo la respuesta a lo que me has preguntado :/",
   "No lo he entendido :/",
   "No lo he entendido :/",
   "No lo he entendido :/",
