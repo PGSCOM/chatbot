@@ -40,7 +40,7 @@ const prompts = [
   ["que", "porque", "como", "donde", "cuando"],
   ["no","no","puede","no gracias"],
   [""],
-  ["jaja","ja","lol","jeje","gracioso","broma","jaj", "jajaja", "jajaj", "jajajaj","xd"]
+  ["jaja","ja","lol","jeje","gracioso","broma","jaj", "jajaja", "jajaj", "jajajaj","xd","jijijija","jijijaja"]
 ]
 
 // Possible responses, in corresponding order
@@ -48,7 +48,7 @@ const prompts = [
 const replies = [
   ["Hola!", "Hola!", "Hey!", "Hola!","Hola"],
   ["adios", "chao", "chao bacalao", "bye"],
-  ["a"],
+  ["a... abecedario"],
   ["En un servidor. Concretamente en github.com."],
   ["Bien", "Mal", "Regular", "Ni idea, soy un robot"],
   ["YO NO SOY SIRI, SOY EL BOT DE PGSCOM"],
