@@ -32,7 +32,7 @@ function output(input) {
     .replace(/whats/g, "what is")
     .replace(/please /g, "")
     .replace(/ please/g, "")
-    .replace(/r u/g, "are you")
+    .replace(/que/g, "que")
     .replace(/q/g, "que")
     .replace(/qn/g, "quien")
     .replace(/qun/g, "quien");

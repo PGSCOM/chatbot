@@ -92,12 +92,12 @@ const replies = [
 // Random for any other user input
 
 const alternative = [
-  "No lo he entendido :/",
-  "No tengo la respuesta a lo que me has preguntado :/",
-  "No lo he entendido :/",
-  "No lo he entendido :/",
-  "No lo he entendido :/",
-  "No lo he entendido :/"
+  "No lo he entendido :/ ¿Que ha pasado? Rellena esto: https://forms.gle/d4AYWSPuoDThZC1g7",
+  "No tengo la respuesta a lo que me has preguntado :/ ¿Que ha pasado? Rellena esto: https://forms.gle/d4AYWSPuoDThZC1g7",
+  "No lo he entendido :/ ¿Que ha pasado? Rellena esto: https://forms.gle/d4AYWSPuoDThZC1g7",
+  "No lo he entendido :/ ¿Que ha pasado? Rellena esto: https://forms.gle/d4AYWSPuoDThZC1g7",
+  "No lo he entendido :/ ¿Que ha pasado? Rellena esto: https://forms.gle/d4AYWSPuoDThZC1g7",
+  "No lo he entendido :/ ¿Que ha pasado? Rellena esto: https://forms.gle/d4AYWSPuoDThZC1g7"
 ]
 
 // Whatever else you want :)
