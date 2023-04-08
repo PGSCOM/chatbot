@@ -1,112 +1,110 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const inputField = document.getElementById('input')
-  inputField.addEventListener('keydown', (e) => {
-    if (e.code === 'Enter') {
-      const input = inputField.value
-      inputField.value = ''
-      output(input)
+document.addEventListener("DOMContentLoaded", () => {
+  const inputField = document.getElementById("input");
+  inputField.addEventListener("keydown", (e) => {
+    if (e.code === "Enter") {
+      let input = inputField.value;
+      inputField.value = "";
+      output(input);
     }
-  })
-})
+  });
+});
 
-function enviar () {
-  const inputField = document.getElementById('input')
-  const input = inputField.value
-  inputField.value = ''
-  output(input)
+
+function enviar() {
+  const inputField = document.getElementById("input");
+  let input = inputField.value;
+  inputField.value = "";
+  output(input);
 }
 
-function output (input) {
-  let product
+function output(input) {
+  let product;
 
   // Regex remove non word/space chars
   // Trim trailing whitespce
   // Remove digits - not sure if this is best
   // But solves problem of entering something like 'hi1'
 
-  let text = input
-    .toLowerCase()
-    .replace(/[^\w\s]/gi, '')
-    .replace(/[\d]/gi, '')
-    .trim()
+  let text = input.toLowerCase().replace(/[^\w\s]/gi, "").replace(/[\d]/gi, "").trim();
   text = text
-    .replace(/ a /g, ' ') // 'tell me a story' -> 'tell me story'
-    .replace(/i feel /g, '')
-    .replace(/whats/g, 'what is')
-    .replace(/please /g, '')
-    .replace(/ please/g, '')
-    .replace(/que/g, 'que')
-    .replace(/q/g, 'que')
-    .replace(/qn/g, 'quien')
-    .replace(/qun/g, 'quien')
+    .replace(/ a /g, " ")   // 'tell me a story' -> 'tell me story'
+    .replace(/i feel /g, "")
+    .replace(/whats/g, "what is")
+    .replace(/please /g, "")
+    .replace(/ please/g, "")
+    .replace(/que/g, "que")
+    .replace(/q/g, "que")
+    .replace(/qn/g, "quien")
+    .replace(/qun/g, "quien");
 
-  if (compare(prompts, replies, text)) {
+  if (compare(prompts, replies, text)) { 
     // Search for exact match in `prompts`
-    product = compare(prompts, replies, text)
+    product = compare(prompts, replies, text);
   } else if (text.match(/gracias/gi)) {
-    product = 'De nada!'
+    product = "De nada!"
   } else if (text.match(/soy|me llamo|yo me llamo/gi)) {
-    product = 'Encantado de conocerte!'
+    product = "Encantado de conocerte!"
   } else if (text.match(/(corona|covid|virus)/gi)) {
     // If no match, check if message contains `coronavirus`
-    product = coronavirus[Math.floor(Math.random() * coronavirus.length)]
+    product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
   } else {
     // If all else fails: random alternative
-    product = alternative[Math.floor(Math.random() * alternative.length)]
+    product = alternative[Math.floor(Math.random() * alternative.length)];
   }
 
   // Update DOM
-  addChat(input, product)
+  addChat(input, product);
 }
 
-function compare (promptsArray, repliesArray, string) {
-  let reply
-  let replyFound = false
+function compare(promptsArray, repliesArray, string) {
+  let reply;
+  let replyFound = false;
   for (let x = 0; x < promptsArray.length; x++) {
     for (let y = 0; y < promptsArray[x].length; y++) {
       if (promptsArray[x][y] === string) {
-        const replies = repliesArray[x]
-        reply = replies[Math.floor(Math.random() * replies.length)]
-        replyFound = true
+        let replies = repliesArray[x];
+        reply = replies[Math.floor(Math.random() * replies.length)];
+        replyFound = true;
         // Stop inner loop when input value matches prompts
-        break
+        break;
       }
     }
     if (replyFound) {
       // Stop outer loop when reply is found instead of interating through the entire array
-      break
+      break;
     }
   }
-  return reply
+  return reply;
 }
 
-function addChat (input, product) {
-  const messagesContainer = document.getElementById('messages')
+function addChat(input, product) {
+  const messagesContainer = document.getElementById("messages");
 
-  const userDiv = document.createElement('div')
-  userDiv.id = 'user'
-  userDiv.className = 'user response'
-  userDiv.innerHTML = `<img src="user.png" class="avatar"><span>${input}</span>`
-  messagesContainer.appendChild(userDiv)
+  let userDiv = document.createElement("div");
+  userDiv.id = "user";
+  userDiv.className = "user response";
+  userDiv.innerHTML = `<img src="user.png" class="avatar"><span>${input}</span>`;
+  messagesContainer.appendChild(userDiv);
 
-  const botDiv = document.createElement('div')
-  const botImg = document.createElement('img')
-  const botText = document.createElement('span')
-  botDiv.id = 'bot'
-  botImg.src = 'bot-mini.png'
-  botImg.className = 'avatar'
-  botDiv.className = 'bot response'
-  botText.innerText = 'Escribiendo...'
-  botDiv.appendChild(botText)
-  botDiv.appendChild(botImg)
-  messagesContainer.appendChild(botDiv)
+  let botDiv = document.createElement("div");
+  let botImg = document.createElement("img");
+  let botText = document.createElement("span");
+  botDiv.id = "bot";
+  botImg.src = "bot-mini.png";
+  botImg.className = "avatar";
+  botDiv.className = "bot response";
+  botText.innerText = "Escribiendo...";
+  botDiv.appendChild(botText);
+  botDiv.appendChild(botImg);
+  messagesContainer.appendChild(botDiv);
   // Keep messages at most recent
-  messagesContainer.scrollTop =
-    messagesContainer.scrollHeight - messagesContainer.clientHeight
+  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   // Fake delay to seem "real"
   setTimeout(() => {
-    botText.innerText = `${product}`
+    botText.innerText = `${product}`;
     textToSpeech(product)
-  }, 2000)
+  }, 2000
+  )
+
 }
