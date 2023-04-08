@@ -1,5 +1,6 @@
 const time = new Date()
-const hora = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds()
+const hora =
+  time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds()
 
 const prompts = [
   [
